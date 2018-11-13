@@ -17,20 +17,21 @@
 
 .testo{
   color: white;
+  margin-bottom: 25px;
 }
 
 .ticket{
   width: 500px;
-  height: 250px;
+  height: 200px;
   background: white;
   text-align: center;
-  line-height: 250px;
+  line-height: 200px;
   box-shadow: 5px 5px 25px #000000;
 }
 
 .ticket h1{
-  display: inline;
-   color: red;
+   display: inline;
+   color: #2f77d6;
    font-family: 'Roboto', sans-serif;
    font-size: 100px;
 }
