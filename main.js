@@ -12,6 +12,13 @@ if (eta < 18){
 
   document.getElementById('costo').innerHTML = dueDecimali;
 
+} else if (eta > 65){
+  var costoTotaleMinorenni = (costoAlKm * km) / 1.40;
+
+  var dueDecimali = costoTotaleMinorenni.toFixed(2);
+
+  document.getElementById('costo').innerHTML = dueDecimali;
+
 } else {
 
   var costoTotaleMinorenni = (costoAlKm * km);
@@ -20,12 +27,4 @@ if (eta < 18){
 
   document.getElementById('costo').innerHTML = dueDecimali;
 
-}
-
-if (eta > 65){
-  var costoTotaleMinorenni = (costoAlKm * km) / 1.40;
-
-  var dueDecimali = costoTotaleMinorenni.toFixed(2);
-
-  document.getElementById('costo').innerHTML = dueDecimali;
 }
