@@ -26,5 +26,4 @@ if (eta < 18){
   var dueDecimali = costoTotaleMinorenni.toFixed(2);
 
   document.getElementById('costo').innerHTML = dueDecimali;
-
 }
