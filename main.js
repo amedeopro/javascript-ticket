@@ -4,40 +4,28 @@ var eta = prompt("Quanti anni hai?");
 
 var costoAlKm = 0.21;
 
-// var costoTotale = km * costoAlKm;
-
 if (eta < 18){
 
   var costoTotaleMinorenni = (costoAlKm * km) / 1.20;
 
-  var n = costoTotaleMinorenni.toFixed(2);
+  var dueDecimali = costoTotaleMinorenni.toFixed(2);
 
-  document.getElementById('costo').innerHTML = n;
+  document.getElementById('costo').innerHTML = dueDecimali;
 
 } else {
 
   var costoTotaleMinorenni = (costoAlKm * km);
 
-  var n = costoTotaleMinorenni.toFixed(2);
+  var dueDecimali = costoTotaleMinorenni.toFixed(2);
 
-  document.getElementById('costo').innerHTML = n;
+  document.getElementById('costo').innerHTML = dueDecimali;
 
 }
 
 if (eta > 65){
+  var costoTotaleMinorenni = (costoAlKm * km) / 1.40;
 
-  var costoTotaleOver = (costoAlKm * km) / 1.40;
+  var dueDecimali = costoTotaleMinorenni.toFixed(2);
 
-  var n = costoTotaleOver.toFixed(2);
-
-  document.getElementById('costo').innerHTML = n;
-
-} else {
-
-  var costoTotaleMinorenni = (costoAlKm * km);
-
-  var n = costoTotaleMinorenni.toFixed(2);
-
-  document.getElementById('costo').innerHTML = n;
-
+  document.getElementById('costo').innerHTML = dueDecimali;
 }
